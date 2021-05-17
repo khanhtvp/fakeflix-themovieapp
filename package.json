@@ -1,0 +1,34 @@
+{
+  "name": "tfm-movie-app",
+  "version": "1.0.0",
+  "description": "Final IWS project: The Movie App",
+  "engines": {
+    "node": "14.3.0",
+    "npm": "6.14.9"
+  },
+  "scripts": {
+    "start": "cd server && npm run start",
+    "build": "(cd client && npm install && npm run build) && (cd ..) && (cd server && npm install)",
+    "heroku-prebuild": "(cd client && npm install --only=dev)"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Axios",
+    "Jest",
+    "Javascript",
+    "node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "JWT",
+    "TMDb API",
+    "Heroku"
+  ],
+  "author": "",
+  "license": "ISC"
+}

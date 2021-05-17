@@ -1,0 +1,23 @@
+@import "../../styles/settings/variables";
+
+.Profile {
+  .cont-profile-options {
+    border-bottom: 3px solid $font-color-disabled;
+    ul {
+      li {
+        color: $font-color-disabled;
+        position: relative;
+        bottom: -4px;
+        cursor: pointer;
+        &:hover {
+          color: $font-color !important;
+          border-bottom: 3px solid $font-color;
+        }
+      }
+    }
+  }
+  .active-option {
+    color: $font-color !important;
+    border-bottom: 3px solid $font-color;
+  }
+}

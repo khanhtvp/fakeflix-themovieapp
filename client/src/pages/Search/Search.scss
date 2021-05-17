@@ -1,0 +1,71 @@
+@import "../../styles/settings/variables";
+@import "../../styles/tools/mixins";
+
+.Search {
+  .input-search {
+    background-color: $bg-color;
+    color: $font-color;
+    border-left: 1px solid $netflix-red-dark !important;
+    border-top: 1px solid $netflix-red-dark !important;
+    border-right: none !important;
+    border-bottom: 1px solid $netflix-red-dark !important;
+    &:focus {
+      background-color: $bg-color;
+      border-left: 1px solid $netflix-red-dark !important;
+      border-top: 1px solid $netflix-red-dark !important;
+      border-right: none !important;
+      border-bottom: 1px solid $netflix-red-dark !important;
+      box-shadow: none !important;
+    }
+    &:active {
+      border-left: 1px solid $netflix-red-dark !important;
+      border-top: 1px solid $netflix-red-dark !important;
+      border-right: none !important;
+      border-bottom: 1px solid $netflix-red-dark !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .empty-cont {
+    border: none;
+  }
+
+  @include placeholder {
+    color: $font-color;
+  }
+
+  .btn-search {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    color: $font-color;
+    background-color: $netflix-red-dark;
+    border: 1px solid $netflix-red-dark;
+    &:hover {
+      background-color: $netflix-red-light;
+      border: 1px solid $netflix-red-light;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Search {
+    input,
+    button,
+    .no-results {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Search {
+    input,
+    button,
+    .no-results {
+      font-size: 1rem;
+    }
+  }
+}
